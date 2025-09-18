@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-rows: 45% 55%; 
+  width: 100%;
+  min-height: 100vh;
+  font-family: Novicento;
+  overflow-x: hidden;
+  margin-bottom: 0;
+}
+
+.espaco {
+  grid-row: 1; 
+  background-color: #ebe7d6; 
+  height: 360px;
+}
+
+.areaInformacoes {
+  grid-row: 2;
+  width: 100%;
+  background-color: #416110;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  grid-template-columns: 45% 55%;
+}
+
+.areaLogo img {
+  width: 300px;
+  grid-column: 1;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 22px;
+}
+
+.texto{
+    text-align: left;
+    max-width: 500px;
+    margin-left: 350px;
+    margin-top: 78px;
+    color: #416110;
+}
+
+.textoMobile{
+  display: none;
+}
+
+.email{
+    text-decoration: underline;
+}
+
+.informacos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1.5rem;
+  margin-right: 9rem;
+}
+
+.redesSociais .imagens {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.imagens img{
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+  .areaLogo img {
+    display: none;
+  }
+
+  .informacos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-left: -3rem;
+  }
+
+  .imagens img{
+    width: 44px;
+  }
+
+  .texto{
+    display: none;
+  }
+
+  .textoMobile{
+    display: block;
+    max-width: 270px;
+    margin-left: 2.5rem;
+    margin-top: 10rem;
+    font-size: 19px;
+    text-align: left;
+    color: #416110;
+  }
+}
