@@ -30,7 +30,7 @@ export default function Contato (){
 
                     <div className="web">
                         <h1>WEB</h1>
-                        <h2>agrosense.com</h2>
+                        <h2>agrosensee.netlify.app</h2>
                     </div>
 
                     <div className="redesSociais">
