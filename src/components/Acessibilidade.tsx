@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ADicone from "../assets/simboloAcessibilidade.jpg"; 
 
 export default function Acessibilidade() {
   const [lendo, setLendo] = useState(false);
@@ -52,11 +53,23 @@ export default function Acessibilidade() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        filter: lendo ? "brightness(0.7)" : "brightness(1)", // Efeito de escurecer
+        overflow: "hidden",
+        padding: "0"
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {lendo ? "⏹️" : "AD"}
+      <img 
+        src={ADicone} 
+        alt="Acessibilidade" 
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          borderRadius: "50%"
+        }}
+      />
     </button>
   );
 }
