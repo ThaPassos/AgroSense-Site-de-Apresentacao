@@ -128,7 +128,7 @@
   }
   
   .textoContainer {
-    margin: 15rem -2rem 0;
+    margin: 20rem -2rem 0;
     text-align: left;
     max-width: 220px;
   }
@@ -149,7 +149,7 @@
   font-size: 18px;
   margin-left: 0; 
   align-items: start;
-  margin-top: 4rem; 
+  margin-top: 6rem; 
 }
 
 .linksMobile a {

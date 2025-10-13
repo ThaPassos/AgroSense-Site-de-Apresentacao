@@ -20,7 +20,7 @@ const Card = () => {
   };
 
   const getAQIStatus = (aqi: number) => {
-    if (aqi <= 50) return 'Excelente';
+    if (aqi <= 50) return 'Exelente';
     if (aqi <= 100) return 'Bom';
     if (aqi <= 150) return 'Moderado';
     return 'Ruim';
@@ -181,7 +181,7 @@ const StyledWrapper = styled.div`
 
   .card {
     position: absolute;
-    width: 265px;
+    width: 250px;
     height: 130px;
     border-radius: 25px;
     background: whitesmoke;
@@ -231,7 +231,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 260px;
+    width: 240px;
     height: 130px;
     border-radius: 35px;
     background: white;
@@ -309,7 +309,7 @@ const StyledWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 260px;
+    width: 240px;
     height: 30px;
     top: 4.7em;
     left: -2.4em;
@@ -323,7 +323,7 @@ const StyledWrapper = styled.div`
 @media (max-width: 768px) {
   .cardm {
     position: relative; 
-    top: 110rem; 
+    top: -18rem; 
     left: 0px;
     max-width: 300px;
   }
@@ -335,7 +335,7 @@ const StyledWrapper = styled.div`
     border-radius: 25px;
     background: whitesmoke;
     color: black;
-    z-index: 3;
+    z-index: 4;
     transition: .4s ease-in-out;
   }
 
