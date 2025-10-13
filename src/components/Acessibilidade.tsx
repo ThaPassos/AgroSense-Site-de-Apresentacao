@@ -38,10 +38,9 @@ export default function Acessibilidade() {
         position: "fixed",
         bottom: "20px",
         right: "20px",
-        backgroundColor: lendo ? "#ff5555" : "#2E8B57",
         color: "white",
         border: "none",
-        borderRadius: "50%",
+        borderRadius: "30%",
         width: "60px",
         height: "60px",
         fontSize: "20px",
@@ -53,7 +52,7 @@ export default function Acessibilidade() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        filter: lendo ? "brightness(0.7)" : "brightness(1)", // Efeito de escurecer
+        filter: lendo ? "brightness(0.7)" : "brightness(1)",
         overflow: "hidden",
         padding: "0"
       }}
