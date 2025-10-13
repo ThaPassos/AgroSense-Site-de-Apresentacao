@@ -20,10 +20,10 @@ const Card = () => {
   };
 
   const getAQIStatus = (aqi: number) => {
-    if (aqi <= 50) return 'Excellent';
-    if (aqi <= 100) return 'Good';
-    if (aqi <= 150) return 'Moderate';
-    return 'Poor';
+    if (aqi <= 50) return 'Excelente';
+    if (aqi <= 100) return 'Bom';
+    if (aqi <= 150) return 'Moderado';
+    return 'Ruim';
   };
 
   return (
@@ -157,7 +157,7 @@ const Card = () => {
           OjAwJuhzAAAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xOFQwNToxNjowOCswMDowMHH9
           Ut8AAAAASUVORK5CYII=" />
               </svg>
-              <div className="pressuretext">Pressure<br />{displayData.pressure} mbar</div>
+              <div className="pressuretext">Pressão<br />{displayData.pressure} mbar</div>
             </div>
             <div className="card3">
               {getAQIStatus(displayData.aqi)}
@@ -181,7 +181,7 @@ const StyledWrapper = styled.div`
 
   .card {
     position: absolute;
-    width: 250px;
+    width: 265px;
     height: 130px;
     border-radius: 25px;
     background: whitesmoke;
@@ -231,7 +231,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     display: flex;
     flex-direction: row;
-    width: 240px;
+    width: 260px;
     height: 130px;
     border-radius: 35px;
     background: white;
@@ -309,7 +309,7 @@ const StyledWrapper = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    width: 260px;
     height: 30px;
     top: 4.7em;
     left: -2.4em;
