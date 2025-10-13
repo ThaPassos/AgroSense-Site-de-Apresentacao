@@ -6,14 +6,12 @@ import simboloArvore from "../assets/simboloArvore.png";
 import agroSenseNossoTrabalho from "../assets/agroSense-NossoTrabalho.png";
 import "./NossoTrabalho.css";
 import { Menu, X } from "lucide-react";
-import Card from "./Card";
 
 export default function NossoTrabalho() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="nossoTrabalho">
-            <Card />
       <div className="conteudoTrabalho">
         <nav className="navbarTrabalho">
           

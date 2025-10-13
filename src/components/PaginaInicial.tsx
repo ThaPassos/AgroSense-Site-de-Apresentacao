@@ -37,7 +37,6 @@ export default function PaginaInicial() {
       />
 
       <div className="conteudo">
-        {/* NAVBAR (só aparece no desktop) */}
         {!isMobile && (
           <nav className={`navbar ${navbarScrolled ? 'scrolled' : ''} ${navbarScrolled ? 'navbar-zindex-high' : 'navbar-zindex-normal'}`}>
             <div className="links">

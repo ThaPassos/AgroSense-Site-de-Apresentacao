@@ -10,13 +10,14 @@ export default function QuemSomos() {
         style={{ backgroundImage: `url(${ImagemDeFundo})` }}
       ></div>
 
-      <p className="TextoApresentacaoCom">Com a
+      <p className="TextoApresentacaoCom">Com a 
             <img
                 src={LogoEscrita}
                 alt="Logo da empresa"
                 className="LogoEscritaTexto"
             />
       </p>
+      <p style={{color: "transparent"}}>Agrosense</p>
 
       <p className="TextoApresentacao">
         você acompanha em tempo real tudo o que acontece em suas áreas

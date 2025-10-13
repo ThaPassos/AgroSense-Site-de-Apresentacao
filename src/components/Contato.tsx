@@ -4,6 +4,7 @@ import Instagram from "../assets/Instagram.png"
 import Linkedin from "../assets/Linkedin.png"
 import Facebook from "../assets/Facebook.png"
 import Whatsapp from "../assets/Whatsapp.png"
+import Card from "./Card"
 
 export default function Contato (){
     return(
@@ -16,6 +17,7 @@ export default function Contato (){
                 <h2 className="textoMobile">É isso que você terá com a AgroSense, 
                     todas as informações que precisa com apenas um toque, dados completos e robustos de forma simples
                 </h2>
+                <Card />
             </div>
             <footer className="areaInformacoes">
                 <div className="areaLogo">

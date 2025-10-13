@@ -1,0 +1,62 @@
+import { useState } from "react";
+
+export default function Acessibilidade() {
+  const [lendo, setLendo] = useState(false);
+
+  const alternarLeitura = () => {
+    if (lendo) {
+      window.speechSynthesis.cancel();
+      setLendo(false);
+    } else {
+      const texto = document.body.innerText;
+      const fala = new SpeechSynthesisUtterance(texto);
+      fala.lang = "pt-BR";
+      fala.rate = 1;
+      fala.pitch = 1;
+      fala.onend = () => setLendo(false);
+      fala.onerror = () => setLendo(false);
+      window.speechSynthesis.speak(fala);
+      setLendo(true);
+    }
+  };
+
+  const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.currentTarget.style.transform = "scale(1.1)";
+  };
+
+  const handleMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.currentTarget.style.transform = "scale(1)";
+  };
+
+  return (
+    <button
+      onClick={alternarLeitura}
+      aria-label={lendo ? "Parar leitura da página" : "Ler conteúdo da página em voz alta"}
+      title={lendo ? "Parar leitura" : "Ouvir página"}
+      style={{
+        position: "fixed",
+        bottom: "20px",
+        right: "20px",
+        backgroundColor: lendo ? "#ff5555" : "#2E8B57",
+        color: "white",
+        border: "none",
+        borderRadius: "50%",
+        width: "60px",
+        height: "60px",
+        fontSize: "20px",
+        fontWeight: "bold",
+        cursor: "pointer",
+        boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
+        transition: "all 0.3s ease",
+        zIndex: 1000,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      {lendo ? "⏹️" : "AD"}
+    </button>
+  );
+}

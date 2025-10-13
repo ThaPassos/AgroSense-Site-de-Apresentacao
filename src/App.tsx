@@ -4,10 +4,12 @@ import QuemSomos from './components/QuemSomos'
 import Contato from './components/Contato'
 import Navbar from './components/NavBar';
 import './App.css';
+import Acessibilidade from './components/Acessibilidade';
 
 function App() {
   return (
     <div>
+      <Acessibilidade />
       <Navbar />
 
       <section id="Home">
