@@ -40,7 +40,7 @@ export default function Acessibilidade() {
         right: "20px",
         color: "white",
         border: "none",
-        borderRadius: "30%",
+        borderRadius: "31%",
         width: "50px",
         height: "50px",
         fontSize: "20px",
