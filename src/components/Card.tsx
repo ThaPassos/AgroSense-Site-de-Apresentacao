@@ -474,7 +474,7 @@ const StyledWrapper = styled.div`
 @media (max-width: 768px) {
   .cardm {
     position: relative; 
-    top: -47rem; 
+    top: -48rem; 
     left: 0px;
     max-width: 300px;
   }
