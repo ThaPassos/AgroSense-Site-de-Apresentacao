@@ -476,7 +476,7 @@ const StyledWrapper = styled.div`
   position: relative; 
   top: 0; 
   left: 0;
-  margin: -47rem 0rem;
+  margin: -48rem 0rem;
   max-width: 300px;
 }
 
