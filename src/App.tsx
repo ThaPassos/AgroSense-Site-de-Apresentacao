@@ -5,6 +5,7 @@ import Contato from './components/Contato'
 import Navbar from './components/NavBar';
 import './App.css';
 import Acessibilidade from './components/Acessibilidade';
+import Card from './components/Card';
 
 function App() {
   return (
@@ -27,6 +28,11 @@ function App() {
       <section id="Contato">
         <Contato />
       </section>
+
+      <div className='card'>
+        <Card />
+      </div>
+      
     </div>
   )
 }
