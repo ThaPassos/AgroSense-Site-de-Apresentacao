@@ -4,7 +4,7 @@ import Instagram from "../assets/Instagram.png"
 import Linkedin from "../assets/Linkedin.png"
 import Facebook from "../assets/Facebook.png"
 import Whatsapp from "../assets/Whatsapp.png"
-import Card from "./Card"
+
 
 export default function Contato (){
     return(
